@@ -1,4 +1,4 @@
 function pbcopy -d 'Copy to clipboard'
-  termux-clipboard-set "$argv"
+  read $copy_text | termux-clipboard-set "$copy_text"
 end
 
